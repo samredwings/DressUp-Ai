@@ -1,0 +1,22 @@
+{
+  "name": "dressup-ai-backend",
+  "version": "2.1.0",
+  "private": true,
+  "description": "Authenticated virtual try-on API",
+  "main": "index.js",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "check": "node --check index.js && node --check pairing_server.js"
+  },
+  "dependencies": {
+    "axios": "1.21.1",
+    "express": "5.3.0"
+  },
+  "overrides": {
+    "body-parser": "2.4.0",
+    "follow-redirects": "1.16.2"
+  }
+}
