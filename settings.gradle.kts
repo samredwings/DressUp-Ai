@@ -2,6 +2,8 @@ pluginManagement {
     repositories {
         google {
             content {
+                // AGP also publishes artifacts under the exact group "com.android".
+                includeGroup("com.android")
                 includeGroupByRegex("com\\.android\\..*")
                 includeGroupByRegex("com\\.google\\..*")
                 includeGroupByRegex("androidx\\..*")
